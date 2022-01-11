@@ -1,0 +1,82 @@
+.titleText {
+    font-family: 'Trebuchet MS';
+    font-size: 100px;
+}
+
+.shimmer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, right top, from(#000), to(#222), color-stop(0.5, rgb(166, 255, 0)));
+    background: -moz-gradient(linear, left top, right top, from(#000), to(#222), color-stop(0.5, rgb(166, 255, 0)));
+    background: gradient(linear, left top, right top, from(#000), to(#222), color-stop(0.5, rgb(166, 255, 0)));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
+  }
+  @-moz-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-o-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+
+
+.bg {
+   background-image: linear-gradient(blue, white);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+.lore:hover{
+    -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+    font-style: italic;
+    transition-duration: 1.5s;
+    font-size: 20px;
+}
+
+.nText{
+    color:black;
+}
